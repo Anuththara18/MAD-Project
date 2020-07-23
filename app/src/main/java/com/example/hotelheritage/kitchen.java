@@ -11,4 +11,6 @@ public class kitchen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kitchen);
     }
+
+    //test
 }
