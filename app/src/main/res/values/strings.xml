@@ -1,3 +1,107 @@
 <resources>
     <string name="app_name">Hotel Heritage</string>
+
+    <!-- SIGN IN -->
+    <string name="hotel_name">Hotel Heritage</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in_btn">Sign In</string>
+    <string name="forgot_pwd_btn">Forgot Password?</string>
+    <string name="sign_up_btn">Sign Up</string>
+
+    <!-- SIGN UP
+
+    <string name="name">Name</string>
+    <string name="name">Name</string>
+    <string name="name">Name</string>
+    <string name="name">Name</string>
+    <string name="name">Name</string>
+    <string name="name">Name</string>
+    <string name="name">Name</string>
+
+    -->
+
+
+    <!-- ROOM DETAILS -->
+
+    <string name="overview">Overview</string>
+
+    <string name="room_1_name">Deluxe Ocean View</string>
+    <string name="room_2_name">Family Suite with Sea View</string>
+    <string name="room_3_name">Junior Suite Superior</string>
+    <string name="room_4_name">Executive Suite</string>
+    <string name="room_5_name">Heritage Suite</string>
+
+    <string name="room_1_price">LKR 11,000</string>
+    <string name="room_2_price">LKR 12,000</string>
+    <string name="room_3_price">LKR 13,000</string>
+    <string name="room_4_price">LKR 14,000</string>
+    <string name="room_5_price">LKR 15,000</string>
+
+    <string name="room_1_description">Deluxe Ocean View Rooms are beautifully appointed with a contemporary design and local Sri Lankan touches. All rooms look out over the Indian Ocean and Galle Face Green, presenting some of the nice views in the city.</string>
+
+    <string name="room_2_description">The rooms offer space, comfort, thoughtful contemporary design and local Sri Lankan touches combined with additional privileges. All rooms provide exceptional views over the ocean providing the choice for discerning guests who require extra attention and services.</string>
+
+    <string name="room_3_description"></string>
+
+    <string name="room_4_description"></string>
+
+    <string name="room_5_description"></string>
+
+    <string name="amenities">Amenities</string>
+
+    <string name="amenities_1"></string>
+    <string name="amenities_2"></string>
+    <string name="amenities_3"></string>
+    <string name="amenities_4"></string>
+    <string name="amenities_5"></string>
+    <string name="amenities_6"></string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <!-- MY PROFILE -->
+
+    <string name="name">Name :</string>
+    <string name="phone">Phone :</string>
+    <string name="email">Email :</string>
+    <string name="dob">DOB :</string>
+    <string name="pwd">Password :</string>
+
+    <string name="edit_profile_btn">Edit Profile</string>
+
+
+    <!-- BOOKING DETAILS -->
+
+    <string name="booking_id">Booking ID :</string>
+    <string name="room_no">Room Number :</string>
+    <string name="room_type">Room Type :</string>
+    <string name="price">Price :</string>
+    <string name="no_of_persons">No of Persons :</string>
+    <string name="check_in">Check-In Date :</string>
+    <string name="check_out">Check-Out Date :</string>
+    <string name="total_amount">Total Amount :</string>
+
+    <string name="confirm_booking_btn">Confirm Booking</string>
+
+
+    <!-- MY BOOKINGS -->
+
+    <string name="cancle_btn">Cancel</string>
+    <string name="reschedule_btn">Reschedule</string>
+    <string name="book_another_btn">Book Another Room</string>
+
+
+    <!-- ROOMS SELECTION -->
+
+    <string name="details_btn">Details</string>
+    <string name="book_now_btn">Book Now</string>
+
 </resources>
