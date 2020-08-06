@@ -50,15 +50,15 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        /*
+
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent signUp = new Intent(getApplicationContext(), Sign_Up.class);
+                Intent signUp = new Intent(getApplicationContext(), RegistrationActivity.class);
                 startActivity(signUp);
             }
         });
-         */
+
     }
 
     boolean isEmail(EditText text) {

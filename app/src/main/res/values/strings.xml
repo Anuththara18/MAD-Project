@@ -9,17 +9,22 @@
     <string name="forgot_pwd_btn">Forgot Password?</string>
     <string name="sign_up_btn">Sign Up</string>
 
-    <!-- SIGN UP
+    <!-- SIGN UP -->
 
     <string name="name">Name</string>
-    <string name="name">Name</string>
-    <string name="name">Name</string>
-    <string name="name">Name</string>
-    <string name="name">Name</string>
-    <string name="name">Name</string>
-    <string name="name">Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="dob">DOB</string>
+    <string name="email">Email</string>
+    <string name="pwd">Password</string>
+    <string name="c_pwd">Confirm Password</string>
 
-    -->
+
+    <!-- RESERVATIONS HOME -->
+
+    <string name="profile_btn">My Profile</string>
+    <string name="bookings_btn">My Bookings</string>
+    <string name="rooms_btn">Rooms</string>
+    <string name="book_now_btn">Book Now</string>
 
 
     <!-- ROOM DETAILS -->
@@ -69,11 +74,11 @@
 
     <!-- MY PROFILE -->
 
-    <string name="name">Name :</string>
-    <string name="phone">Phone :</string>
-    <string name="email">Email :</string>
-    <string name="dob">DOB :</string>
-    <string name="pwd">Password :</string>
+    <string name="name_p">Name :</string>
+    <string name="phone_p">Phone :</string>
+    <string name="email_p">Email :</string>
+    <string name="dob_p">DOB :</string>
+    <string name="pwd_p">Password :</string>
 
     <string name="edit_profile_btn">Edit Profile</string>
 
@@ -102,6 +107,5 @@
     <!-- ROOMS SELECTION -->
 
     <string name="details_btn">Details</string>
-    <string name="book_now_btn">Book Now</string>
 
 </resources>
