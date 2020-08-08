@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         abutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent img = new Intent(getApplicationContext(), BookingDetailsActivity.class);
+                Intent img = new Intent(getApplicationContext(), Room2Activity.class);
                 startActivity(img);
 
             }

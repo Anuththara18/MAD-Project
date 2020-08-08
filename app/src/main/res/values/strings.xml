@@ -21,6 +21,7 @@
 
     <!-- RESERVATIONS HOME -->
 
+    <string name="welcome">Welcome to Heritage Hotel...</string>
     <string name="profile_btn">My Profile</string>
     <string name="bookings_btn">My Bookings</string>
     <string name="rooms_btn">Rooms</string>
@@ -37,11 +38,11 @@
     <string name="room_4_name">Executive Suite</string>
     <string name="room_5_name">Heritage Suite</string>
 
-    <string name="room_1_price">LKR 11,000</string>
-    <string name="room_2_price">LKR 12,000</string>
-    <string name="room_3_price">LKR 13,000</string>
-    <string name="room_4_price">LKR 14,000</string>
-    <string name="room_5_price">LKR 15,000</string>
+    <string name="room_1_price">LKR 11,000 / Night </string>
+    <string name="room_2_price">LKR 12,000 / Night </string>
+    <string name="room_3_price">LKR 13,000 / Night </string>
+    <string name="room_4_price">LKR 14,000 / Night </string>
+    <string name="room_5_price">LKR 15,000 / Night </string>
 
     <string name="room_1_description">Deluxe Ocean View Rooms are beautifully appointed with a contemporary design and local Sri Lankan touches. All rooms look out over the Indian Ocean and Galle Face Green, presenting some of the nice views in the city.</string>
 
@@ -66,7 +67,6 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
