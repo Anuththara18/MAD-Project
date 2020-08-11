@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Room2Activity"></activity>
+        <activity android:name=".RoomsSelectionActivity"></activity>
+        <activity android:name=".Room2Activity" />
         <activity android:name=".BookingDetailsActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".LoginActivity" />
