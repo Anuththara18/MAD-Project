@@ -20,11 +20,11 @@ public class RoomsSelectionActivity extends AppCompatActivity {
         roomsList = new ArrayList<>();
         listView = (ListView) findViewById(R.id.roomsList);
 
-        roomsList.add(new RoomsList(R.drawable.room1a, "Room1", "LKR 11,000"));
-        roomsList.add(new RoomsList(R.drawable.room2a, "Room2", "LKR 12,000"));
-        roomsList.add(new RoomsList(R.drawable.room3a, "Room3", "LKR 13,000"));
-        roomsList.add(new RoomsList(R.drawable.room4a, "Room4", "LKR 14,000"));
-        roomsList.add(new RoomsList(R.drawable.room5a, "Room5", "LKR 15,000"));
+        roomsList.add(new RoomsList(R.drawable.room1a, "Deluxe Ocean View", R.drawable.star_ratings_4,"LKR 11,000 / Night"));
+        roomsList.add(new RoomsList(R.drawable.room2a, "Family Suite with Sea View", R.drawable.star_ratings_3,"LKR 12,000 / Night"));
+        roomsList.add(new RoomsList(R.drawable.room3a, "Junior Suite Superior", R.drawable.star_ratings_2,"LKR 13,000 / Night"));
+        roomsList.add(new RoomsList(R.drawable.room4a, "Executive Suite", R.drawable.star_ratings_1,"LKR 14,000 / Night"));
+        roomsList.add(new RoomsList(R.drawable.room5a, "Heritage Suite", R.drawable.star_ratings_1,"LKR 15,000 / Night"));
 
         RoomListAdapter adapter = new RoomListAdapter(this, R.layout.room_list, roomsList);
 

@@ -34,12 +34,14 @@ public class RoomListAdapter extends ArrayAdapter<RoomsList> {
         TextView textViewName = view.findViewById(R.id.roomName);
         TextView textViewPrice = view.findViewById(R.id.roomPrice);
         ImageView imageView = view.findViewById(R.id.roomImage);
+        ImageView imageView2 = view.findViewById(R.id.ratings);
 
         RoomsList roomsList = roomList.get(position);
 
         textViewName.setText(roomsList.getName());
         textViewPrice.setText(roomsList.getPrice());
-        imageView.setImageDrawable(mCtx.getResources().getDrawable(roomsList.getImage()));
+        imageView.setImageDrawable(mCtx.getResources().getDrawable(roomsList.getImage1()));
+        imageView2.setImageDrawable(mCtx.getResources().getDrawable(roomsList.getImage2()));
 
         view.findViewById(R.id.detailsBtn).setOnClickListener(new View.OnClickListener() {
             @Override

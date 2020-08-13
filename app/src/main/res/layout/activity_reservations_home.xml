@@ -10,7 +10,6 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
         android:layout_marginBottom="29dp"
         android:fontFamily="cursive"
         android:text="@string/welcome"
@@ -21,8 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/abutton"
-        app:layout_constraintVertical_bias="0.765" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button6"
@@ -31,7 +29,7 @@
         android:layout_marginTop="35dp"
         android:layout_marginEnd="31dp"
         android:layout_marginBottom="382dp"
-        android:background="@drawable/reservations_home_btns"
+        android:background="@color/reservation_button"
         android:drawableTop="@drawable/icon_profile_large"
         android:drawablePadding="5dp"
         android:paddingTop="8dp"
@@ -50,7 +48,7 @@
         android:layout_marginTop="35dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="382dp"
-        android:background="@drawable/reservations_home_btns"
+        android:background="@color/reservation_button"
         android:drawableTop="@drawable/icon_bookings_large"
         android:drawablePadding="5dp"
         android:paddingTop="8dp"
@@ -70,7 +68,7 @@
         android:layout_marginTop="128dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="35dp"
-        android:background="@drawable/reservations_home_btns"
+        android:background="@color/reservation_button"
         android:drawableTop="@drawable/icon_home_large"
         android:drawablePadding="5dp"
         android:paddingTop="8dp"
@@ -89,7 +87,7 @@
         android:layout_marginTop="128dp"
         android:layout_marginEnd="31dp"
         android:layout_marginBottom="35dp"
-        android:background="@drawable/reservations_home_btns"
+        android:background="@color/reservation_button"
         android:drawableTop="@drawable/icon_hotel_large"
         android:drawablePadding="5dp"
         android:paddingTop="8dp"

@@ -7,17 +7,49 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/lgBtn"
+        android:id="@+id/rmBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="151dp"
         android:layout_marginTop="262dp"
         android:layout_marginEnd="172dp"
         android:layout_marginBottom="421dp"
-        android:text="Button"
+        android:text="Rooms"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/LgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="80dp"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/rmBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BdBtn"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="267dp"
+        android:text="Booking D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rmBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

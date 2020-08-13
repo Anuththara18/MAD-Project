@@ -30,18 +30,6 @@ public class LoginActivity extends AppCompatActivity {
         signIn = findViewById(R.id.signIn);
         signUp = findViewById(R.id.signUp);
 
-
-        abutton = findViewById(R.id.abutton);
-        abutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent img = new Intent(getApplicationContext(), Room2Activity.class);
-                startActivity(img);
-
-            }
-        });
-
-
         signIn.setOnClickListener(new View.OnClickListener() {
 
             @Override

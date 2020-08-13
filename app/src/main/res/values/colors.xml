@@ -8,4 +8,6 @@
     <color name="gradient2">#4d4dff</color>
     <color name="gradient3">#000066</color>
 
+    <color name="reservation_button">#2196F3</color>
+
 </resources>

@@ -14,13 +14,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button lg = findViewById(R.id.lgBtn);
+        Button rms = findViewById(R.id.rmBtn);
+        Button bd = findViewById(R.id.BdBtn);
+        Button lg = findViewById(R.id.LgBtn);
+
+        rms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lga = new Intent(getApplicationContext(), RoomsSelectionActivity.class);
+                startActivity(lga);
+            }
+        });
+
+        bd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lga1 = new Intent(getApplicationContext(), BookingDetailsActivity.class);
+                startActivity(lga1);
+            }
+        });
 
         lg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lga = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(lga);
+                Intent lga2 = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(lga2);
             }
         });
 
