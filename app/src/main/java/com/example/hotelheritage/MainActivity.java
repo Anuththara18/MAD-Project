@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         rms.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lga = new Intent(getApplicationContext(), RoomsSelectionActivity.class);
+                Intent lga = new Intent(getApplicationContext(), CheckOutActivity.class);
                 startActivity(lga);
             }
         });
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         bd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lga1 = new Intent(getApplicationContext(), BookingDetailsActivity.class);
+                Intent lga1 = new Intent(getApplicationContext(), EditProfileActivity.class);
                 startActivity(lga1);
             }
         });

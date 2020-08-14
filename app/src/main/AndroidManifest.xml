@@ -8,32 +8,41 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" -->
+        android:theme="@style/AppTheme">
 
-        <activity android:name=".MyBookingsActivity"
-            android:label="@string/my_bookings"/>
-
-        <activity android:name=".MyProfileActivity"
-            android:label="@string/my_profile"/>
-
-        <activity android:name=".ReservationsHomeActivity"
-            android:label="@string/reservations"/>
-
-        <activity android:name=".RoomsSelectionActivity"
-            android:label="@string/rooms"/>
-
-        <activity android:name=".Room2Activity"
-            android:label="@string/room_details"/>
-
-        <activity android:name=".BookingDetailsActivity"
-            android:label="@string/booking_details"/>
-
-        <activity android:name=".RegistrationActivity"
-            android:label="@string/sign_up_btn"/>
-
-        <activity android:name=".LoginActivity"
-            android:label="@string/sign_in_btn"/>
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="000" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="000" />
+        <activity
+            android:name=".CheckOutActivity"
+            android:label="000" />
+        <activity
+            android:name=".MyBookingsActivity"
+            android:label="@string/my_bookings" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:label="@string/my_profile" />
+        <activity
+            android:name=".ReservationsHomeActivity"
+            android:label="@string/reservations" />
+        <activity
+            android:name=".RoomsSelectionActivity"
+            android:label="@string/rooms" />
+        <activity
+            android:name=".Room2Activity"
+            android:label="@string/room_details" />
+        <activity
+            android:name=".BookingDetailsActivity"
+            android:label="@string/booking_details" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/sign_up_btn" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/sign_in_btn" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -42,6 +51,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

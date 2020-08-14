@@ -2,6 +2,7 @@ package com.example.hotelheritage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.text.TextUtils;
@@ -27,6 +28,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     EditText password;
     EditText confirmPassword;
     Button signUp;
+    Button signIn;
 
     private DatePickerDialog DatePickerDialog;
 
@@ -56,6 +58,15 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                 checkDataEntered();
             }
         });
+
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forgotPassword = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(forgotPassword);
+            }
+        });
+
     }
 
     public boolean isValidPhone(CharSequence phone) {
@@ -140,6 +151,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     }
 
     private void findViewsById() {
+        signIn = findViewById(R.id.signIn);
         dob = (EditText) findViewById(R.id.dob);
         dob.setInputType(InputType.TYPE_NULL);
         dob.requestFocus();

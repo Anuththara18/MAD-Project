@@ -4,9 +4,9 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
-    <color name="gradient1">#9999ff</color>
-    <color name="gradient2">#4d4dff</color>
-    <color name="gradient3">#000066</color>
+    <color name="gradient1">#6EE6F4</color>
+    <color name="gradient2">#D4EAF4</color>
+    <color name="gradient3">#9AEFFA</color>
 
     <color name="reservation_button">#2196F3</color>
 

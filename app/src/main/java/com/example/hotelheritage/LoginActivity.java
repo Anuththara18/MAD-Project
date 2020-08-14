@@ -13,12 +13,11 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button abutton;
-
     EditText email;
     EditText password;
     Button signIn;
     Button signUp;
+    Button forgotPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         signIn = findViewById(R.id.signIn);
         signUp = findViewById(R.id.signUp);
+        forgotPassword = findViewById(R.id.forgotPassword);
 
         signIn.setOnClickListener(new View.OnClickListener() {
 
@@ -38,12 +38,19 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent signUp = new Intent(getApplicationContext(), RegistrationActivity.class);
                 startActivity(signUp);
+            }
+        });
+
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent forgotPassword = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
+                startActivity(forgotPassword);
             }
         });
 

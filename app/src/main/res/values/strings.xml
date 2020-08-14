@@ -9,6 +9,8 @@
     <string name="forgot_pwd_btn">Forgot Password?</string>
     <string name="sign_up_btn">Sign Up</string>
 
+    <string name="forgot_pwd">Forgot Password</string>
+
 
     <!-- SIGN UP -->
 
@@ -18,6 +20,7 @@
     <string name="email">Email</string>
     <string name="pwd">Password</string>
     <string name="c_pwd">Confirm Password</string>
+    <string name="select_hint">Select</string>
 
 
     <!-- RESERVATIONS HOME -->
@@ -76,7 +79,7 @@
     <string name="login_failed">"Login failed"</string>
 
 
-    <!-- MY PROFILE -->
+    <!-- MY PROFILE & EDIT PROFILE -->
 
     <string name="my_profile">My Profile</string>
     <string name="name_p">Name :</string>
@@ -85,6 +88,7 @@
     <string name="dob_p">DOB :</string>
     <string name="pwd_p">Password :</string>
     <string name="edit_profile_btn">Edit Profile</string>
+    <string name="save_changes_btn">Save Changes</string>
 
 
     <!-- BOOKING DETAILS -->
@@ -113,5 +117,16 @@
 
     <string name="rooms">Rooms</string>
     <string name="details_btn">Details</string>
+
+
+    <!-- RESERVATIONS HOME -->
+
+    <string name="adults">Adults :</string>
+    <string name="children">Children :</string>
+    <string name="proceed_btn">Proceed</string>
+
+
+    <string name="spinner_title">spinner</string>
+
 
 </resources>
