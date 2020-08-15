@@ -4,13 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class kitchen extends AppCompatActivity {
+public class ActivitesHome extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kitchen);
+        setContentView(R.layout.activity_activites_home);
     }
-
-    //test
 }
