@@ -3,6 +3,7 @@ package com.example.hotelheritage;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
@@ -32,6 +33,16 @@ public class CheckOutActivity extends AppCompatActivity implements AdapterView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_out);
+
+        Button btn2 = (Button) findViewById(R.id.proceed);
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int5 = new Intent(getApplicationContext(), BookingDetailsActivity.class);
+                startActivity(int5);
+            }
+        });
 
         checkinDate=(EditText)findViewById(R.id.checkinDate);
         checkInBtn=(Button)findViewById(R.id.check_in_btn);
@@ -86,12 +97,22 @@ public class CheckOutActivity extends AppCompatActivity implements AdapterView.O
 
 
         // Spinner element
+        Spinner roomTypeSpinner = (Spinner) findViewById(R.id.roomTypeSpinner);
         Spinner adultsSpinner = (Spinner) findViewById(R.id.adultsSpinner);
         Spinner childrenSpinner = (Spinner) findViewById(R.id.childrenSpinner);
 
         // Spinner click listener
+        roomTypeSpinner.setOnItemSelectedListener(this);
         adultsSpinner.setOnItemSelectedListener(this);
         childrenSpinner.setOnItemSelectedListener(this);
+
+        // Spinner Drop down elements
+        List<String> roomsCategories = new ArrayList<String>();
+        roomsCategories.add("Deluxe Ocean View");
+        roomsCategories.add("Family Suite with Sea View");
+        roomsCategories.add("Junior Suite Superior");
+        roomsCategories.add("Executive Suite");
+        roomsCategories.add("Heritage Suite");
 
         // Spinner Drop down elements
         List<String> adultsCategories = new ArrayList<String>();
@@ -120,14 +141,17 @@ public class CheckOutActivity extends AppCompatActivity implements AdapterView.O
         childrenCategories.add("10");
 
         // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapterAdults = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, adultsCategories);
-        ArrayAdapter<String> dataAdapterChildren = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, childrenCategories);
+        ArrayAdapter<String> dataAdapterRooms = new ArrayAdapter<String>(this, R.layout.spinner_item, roomsCategories);
+        ArrayAdapter<String> dataAdapterAdults = new ArrayAdapter<String>(this, R.layout.spinner_item, adultsCategories);
+        ArrayAdapter<String> dataAdapterChildren = new ArrayAdapter<String>(this, R.layout.spinner_item, childrenCategories);
 
         // Drop down layout style - list view with radio button
-        dataAdapterAdults.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        dataAdapterChildren.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapterRooms.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        dataAdapterAdults.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        dataAdapterChildren.setDropDownViewResource(R.layout.spinner_dropdown_item);
 
         // attaching data adapter to spinner
+        roomTypeSpinner.setAdapter(dataAdapterRooms);
         adultsSpinner.setAdapter(dataAdapterAdults);
         childrenSpinner.setAdapter(dataAdapterChildren);
 
@@ -142,7 +166,7 @@ public class CheckOutActivity extends AppCompatActivity implements AdapterView.O
         Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_SHORT).show();
     }
     public void onNothingSelected(AdapterView<?> arg0) {
-        // TODO Auto-generated method stub
+
     }
 
 }
