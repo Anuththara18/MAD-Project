@@ -4,64 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".ActivitesHome">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="207dp"
-        android:layout_height="157dp"
-        android:layout_marginStart="16dp"
+    <Button
+        android:id="@+id/gym"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_dumbbell"
+        android:text="gym"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052"
-        app:srcCompat="@drawable/pool" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="148dp"
-        android:layout_height="157dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="296dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/indroorsport" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="207dp"
-        android:layout_height="139dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.059"
-        app:srcCompat="@drawable/gym" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="150dp"
-        android:layout_height="227dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:srcCompat="@drawable/spa"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintVertical_bias="0.088" />
 
     <Button
-        android:id="@+id/appointments"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="209dp"
-        android:layout_height="68dp"
-        android:fontFamily="sans-serif"
-        android:text="My Appointments"
+        android:id="@+id/swim"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_swimming"
+        android:text="Swimming"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.054" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/tennis"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_racket"
+        android:text="indoor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/golf"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_golf"
+        android:text="golf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <Button
+        android:id="@+id/yoga"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_yoga"
+        android:text="yoga"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <Button
+        android:id="@+id/spa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_massage"
+        android:text="Spa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <Button
+        android:id="@+id/kidsArea"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_playground"
+        android:text="kids area"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <Button
+        android:id="@+id/billiard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_billiard"
+        android:text="Billiard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <Button
+        android:id="@+id/myAppointment"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_calendar"
+        android:text="my list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
