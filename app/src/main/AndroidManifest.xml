@@ -12,13 +12,13 @@
 
         <activity
             android:name=".EditProfileActivity"
-            android:label="000" />
+            android:label="@string/edit_profile_btn" />
         <activity
             android:name=".ForgotPasswordActivity"
-            android:label="000" />
+            android:label="Forgot Password" />
         <activity
             android:name=".CheckOutActivity"
-            android:label="000" />
+            android:label="Check Out" />
         <activity
             android:name=".MyBookingsActivity"
             android:label="@string/my_bookings" />
@@ -44,13 +44,18 @@
             android:name=".LoginActivity"
             android:label="@string/sign_in_btn" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
     </application>
 

@@ -4,20 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#ffffff"
     tools:context=".RegistrationActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="413dp"
-        android:layout_height="382dp"
+        android:id="@+id/imageView3"
+        android:layout_width="499dp"
+        android:layout_height="491dp"
+        android:alpha="0.3"
         android:src="@drawable/waves"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="@font/kaushan_script"
+        android:text="@string/hotel_name"
+        android:textColor="@color/gradient3"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/name"
@@ -26,7 +45,6 @@
         android:layout_marginStart="102dp"
         android:layout_marginEnd="99dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/text_inputs"
         android:drawableLeft="@drawable/icon_person"
         android:drawablePadding="15dp"
         android:ems="10"
@@ -36,6 +54,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/phone"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -45,7 +64,6 @@
         android:layout_marginStart="102dp"
         android:layout_marginEnd="99dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/text_inputs"
         android:drawableLeft="@drawable/icon_call"
         android:drawablePadding="15dp"
         android:ems="10"
@@ -64,7 +82,6 @@
         android:layout_marginStart="102dp"
         android:layout_marginEnd="96dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/text_inputs"
         android:drawableLeft="@drawable/icon_calendar"
         android:drawablePadding="15dp"
         android:ems="10"
@@ -83,7 +100,6 @@
         android:layout_marginStart="102dp"
         android:layout_marginEnd="99dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/text_inputs"
         android:drawableLeft="@drawable/icon_email"
         android:drawablePadding="15dp"
         android:ems="10"
@@ -102,7 +118,6 @@
         android:layout_marginStart="102dp"
         android:layout_marginEnd="99dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/text_inputs"
         android:drawableLeft="@drawable/icon_lock"
         android:drawablePadding="15dp"
         android:ems="10"
@@ -119,8 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="102dp"
         android:layout_marginEnd="97dp"
-        android:layout_marginBottom="68dp"
-        android:background="@drawable/text_inputs"
+        android:layout_marginBottom="20dp"
         android:drawableLeft="@drawable/icon_lock"
         android:drawablePadding="15dp"
         android:ems="10"
@@ -134,11 +148,11 @@
 
     <Button
         android:id="@+id/signUp"
-        android:layout_width="174dp"
-        android:layout_height="50dp"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
         android:layout_marginStart="116dp"
         android:layout_marginEnd="121dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="92dp"
         android:background="@drawable/rounded_buttons"
         android:text="@string/sign_up_btn"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -147,7 +161,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -156,21 +170,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="40dp"
         android:text="Already have an account?"
         android:textColor="@android:color/black"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/signIn"
-        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="28dp"
         android:background="@android:color/transparent"
         android:text="@string/sign_in_btn"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"

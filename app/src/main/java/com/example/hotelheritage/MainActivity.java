@@ -7,38 +7,59 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button rms = findViewById(R.id.rmBtn);
-        Button bd = findViewById(R.id.BdBtn);
-        Button lg = findViewById(R.id.LgBtn);
+        Button btn1 = (Button) findViewById(R.id.btn1);
+        Button btn2 = (Button) findViewById(R.id.btn2);
+        Button btn3 = (Button) findViewById(R.id.btn3);
+        Button btn4 = (Button) findViewById(R.id.btn4);
+        Button btn5 = (Button) findViewById(R.id.btn5);
 
-        rms.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lga = new Intent(getApplicationContext(), CheckOutActivity.class);
-                startActivity(lga);
+                Intent int1 = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(int1);
             }
         });
 
-        bd.setOnClickListener(new View.OnClickListener() {
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lga1 = new Intent(getApplicationContext(), EditProfileActivity.class);
-                startActivity(lga1);
+                Intent int2 = new Intent(getApplicationContext(), ReservationsHomeActivity.class);
+                startActivity(int2);
             }
         });
 
-        lg.setOnClickListener(new View.OnClickListener() {
+        btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent lga2 = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(lga2);
+                Intent int3 = new Intent(getApplicationContext(), BookingDetailsActivity.class);
+                startActivity(int3);
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int4 = new Intent(getApplicationContext(), MyBookingsActivity.class);
+                startActivity(int4);
+            }
+        });
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int5 = new Intent(getApplicationContext(), MyProfileActivity.class);
+                startActivity(int5);
             }
         });
 

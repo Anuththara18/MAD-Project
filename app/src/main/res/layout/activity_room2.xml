@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
+    android:textAlignment="viewEnd"
     tools:context=".Room2Activity">
 
     <ImageView
         android:id="@+id/roomImage"
-        android:layout_width="357dp"
-        android:layout_height="242dp"
+        android:layout_width="294dp"
+        android:layout_height="210dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="39dp"
+        android:layout_marginBottom="10dp"
         android:src="@drawable/room1a"
         app:layout_constraintBottom_toTopOf="@+id/textView30"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -26,12 +27,15 @@
         android:layout_height="87dp"
         android:layout_marginStart="28dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/boogaloo"
         android:text="@string/room_2_description"
         android:textAlignment="viewStart"
-        android:textColor="@android:color/black"
+        android:textColor="#007CA6"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/amenities"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -39,8 +43,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/kaushan_script"
         android:text="@string/amenities"
-        android:textColor="@color/gradient3"
+        android:textColor="#00467E"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
@@ -52,10 +58,11 @@
         android:layout_height="20dp"
         android:layout_marginStart="28dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="12dp"
         android:src="@drawable/star_ratings_2"
         app:layout_constraintBottom_toTopOf="@+id/textView32"
         app:layout_constraintEnd_toStartOf="@+id/textView31"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -63,9 +70,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/pacifico"
         android:text="@string/room_2_name"
-        android:textColor="@color/gradient3"
+        android:textColor="#00467E"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
@@ -73,13 +81,17 @@
 
     <TextView
         android:id="@+id/textView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="42dp"
+        android:layout_width="150dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/gradient1"
+        android:fontFamily="@font/aclonica"
         android:text="@string/room_2_price"
-        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textColor="@color/gradient3"
         android:textColorHighlight="@color/gradient1"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/roomDescription"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -89,8 +101,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
+        android:fontFamily="@font/kaushan_script"
         android:text="@string/overview"
-        android:textColor="@color/gradient3"
+        android:textColor="#00467E"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/roomDescription"
@@ -102,10 +115,11 @@
         android:layout_height="24dp"
         android:layout_marginStart="28dp"
         android:layout_marginEnd="196dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="8dp"
         android:src="@drawable/amenities"
         app:layout_constraintBottom_toTopOf="@+id/textView33"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -114,8 +128,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="6dp"
+        android:fontFamily="@font/boogaloo"
         android:text="@string/amenities_1"
-        android:textColor="@android:color/black"
+        android:textColor="#007CA6"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/textView34"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -126,8 +142,10 @@
         android:layout_marginStart="152dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="7dp"
+        android:fontFamily="@font/boogaloo"
         android:text="@string/amenities_3"
-        android:textColor="@android:color/black"
+        android:textColor="#007CA6"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/textView35"
         app:layout_constraintEnd_toStartOf="@+id/textView37"
         app:layout_constraintHorizontal_bias="1.0"
@@ -140,8 +158,10 @@
         android:layout_marginStart="325dp"
         android:layout_marginEnd="59dp"
         android:layout_marginBottom="7dp"
+        android:fontFamily="@font/boogaloo"
         android:text="@string/amenities_5"
-        android:textColor="@android:color/black"
+        android:textColor="#007CA6"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/textView38"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -152,11 +172,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="325dp"
         android:layout_marginEnd="39dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/boogaloo"
         android:text="@string/amenities_6"
-        android:textColor="@android:color/black"
+        android:textColor="#007CA6"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -164,9 +187,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/boogaloo"
         android:text="@string/amenities_2"
-        android:textColor="@android:color/black"
+        android:textColor="#007CA6"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -176,16 +201,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
         android:layout_marginEnd="42dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/boogaloo"
         android:text="@string/amenities_4"
-        android:textColor="@android:color/black"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
+        android:textColor="#007CA6"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/bookNowBtn"
         app:layout_constraintEnd_toStartOf="@+id/textView38"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/bookNowBtn"
         android:layout_width="124dp"
         android:layout_height="39dp"
         android:layout_marginStart="144dp"
@@ -198,6 +225,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

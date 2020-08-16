@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#ffffff"
     tools:context=".EditProfileActivity">
 
     <TextView
@@ -12,17 +12,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="52dp"
         android:drawableLeft="@drawable/icon_person"
         android:drawablePadding="15dp"
         android:paddingLeft="20dp"
         android:text="@string/name_p"
-        android:textColor="@android:color/black"
+        android:textColor="@color/gradient3"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -30,17 +28,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="18dp"
         android:layout_marginBottom="56dp"
         android:drawableLeft="@drawable/icon_call"
         android:drawablePadding="15dp"
         android:paddingLeft="20dp"
         android:text="@string/phone_p"
-        android:textColor="@android:color/black"
+        android:textColor="@color/gradient3"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toStartOf="@+id/editTextPhone"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -48,13 +44,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="33dp"
+        android:layout_marginEnd="46dp"
         android:layout_marginBottom="56dp"
         android:drawableLeft="@drawable/icon_calendar"
         android:drawablePadding="15dp"
         android:paddingLeft="20dp"
         android:text="@string/dob_p"
-        android:textColor="@android:color/black"
+        android:textColor="@color/gradient3"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
@@ -72,7 +68,7 @@
         android:drawablePadding="15dp"
         android:paddingLeft="20dp"
         android:text="@string/email_p"
-        android:textColor="@android:color/black"
+        android:textColor="@color/gradient3"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
@@ -85,16 +81,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="6dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="152dp"
         android:drawableLeft="@drawable/icon_lock"
         android:drawablePadding="15dp"
         android:paddingLeft="20dp"
         android:text="@string/pwd_p"
-        android:textColor="@android:color/black"
+        android:textColor="@color/gradient3"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -104,6 +101,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="28dp"
         android:ems="10"
+        android:hint="+94 764 585 207"
         android:inputType="phone"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/dob"
@@ -111,16 +109,17 @@
 
     <EditText
         android:id="@+id/dob"
-        android:layout_width="wrap_content"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="36dp"
         android:ems="10"
+        android:hint="05 - 12 - 1998"
         android:inputType="date"
-        android:textAlignment="textEnd"
+        android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/selectDate" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -129,6 +128,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="39dp"
         android:ems="10"
+        android:hint="jay123@gmail.com"
         android:inputType="textEmailAddress"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
@@ -139,8 +139,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="56dp"
         android:ems="10"
+        android:hint="password"
         android:inputType="textPassword"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
@@ -153,8 +154,8 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="35dp"
         android:ems="10"
+        android:hint="Jayakody"
         android:inputType="textPersonName"
-        android:text="Name"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -165,7 +166,7 @@
         android:layout_height="47dp"
         android:layout_marginStart="148dp"
         android:layout_marginEnd="152dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/rounded_buttons"
         android:text="@string/save_changes_btn"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -179,14 +180,13 @@
 
     <Button
         android:id="@+id/selectDate"
-        android:layout_width="48dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="276dp"
-        android:layout_marginTop="119dp"
-        android:layout_marginEnd="47dp"
-        android:text="B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="23dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="316dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/icon_calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

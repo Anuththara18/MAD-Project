@@ -4,150 +4,151 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D0E9FD"
+    android:background="@android:color/white"
     tools:context=".CheckOutActivity">
 
     <ImageView
-        android:layout_width="410dp"
-        android:layout_height="299dp"
+        android:layout_width="413dp"
+        android:layout_height="382dp"
         android:src="@drawable/waves"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472" />
-
-    <EditText
-        android:id="@+id/checkinDate"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="28dp"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/checkoutDate"
-        app:layout_constraintEnd_toStartOf="@+id/check_in_btn"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.458" />
 
     <EditText
         android:id="@+id/checkoutDate"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="36dp"
         android:ems="10"
         android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/adultsSpinner"
-        app:layout_constraintEnd_toStartOf="@+id/check_out_btn" />
+        app:layout_constraintBottom_toTopOf="@+id/textView44"
+        app:layout_constraintEnd_toStartOf="@+id/check_out_btn"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView42"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/checkinDate"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="51dp"
-        android:text="@string/check_in"
-        android:textColor="@color/gradient3"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:layout_marginStart="171dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="date"
         app:layout_constraintBottom_toTopOf="@+id/textView43"
-        app:layout_constraintEnd_toStartOf="@+id/checkinDate"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toStartOf="@+id/check_in_btn"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="51dp"
-        android:text="@string/check_in"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/check_out"
         android:textColor="@color/gradient3"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView44"
-        app:layout_constraintEnd_toStartOf="@+id/checkoutDate"
+        app:layout_constraintBottom_toTopOf="@+id/checkoutDate"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView44"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="14dp"
         android:text="@string/adults"
         android:textColor="@color/gradient3"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView45"
-        app:layout_constraintEnd_toStartOf="@+id/adultsSpinner"
+        app:layout_constraintBottom_toTopOf="@+id/adultsSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="87dp"
-        android:layout_marginBottom="232dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="14dp"
         android:text="@string/children"
         android:textColor="@color/gradient3"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/childrenSpinner"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/check_in_btn"
-        android:layout_width="25dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="45dp"
-        android:background="@android:color/transparent"
-        android:drawableStart="@drawable/icon_calendar"
-        app:layout_constraintBottom_toTopOf="@+id/check_out_btn"
+        app:layout_constraintBottom_toTopOf="@+id/childrenSpinner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/check_out_btn"
-        android:layout_width="25dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="392dp"
-        android:background="@android:color/transparent"
-        android:drawableStart="@drawable/icon_calendar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/adultsSpinner"
         style="@style/Widget.AppCompat.Spinner.Underlined"
         android:layout_width="150dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="36dp"
         android:prompt="@string/spinner_title"
-        app:layout_constraintBottom_toTopOf="@+id/childrenSpinner"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/textView45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/childrenSpinner"
         style="@style/Widget.AppCompat.Spinner.Underlined"
         android:layout_width="150dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="232dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="30dp"
         android:prompt="@string/spinner_title"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/check_in"
+        android:textColor="@color/gradient3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkinDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/check_in_btn"
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="93dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/icon_calendar"
+        app:layout_constraintBottom_toTopOf="@+id/check_out_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/check_out_btn"
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="356dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/icon_calendar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -155,8 +156,9 @@
         android:id="@+id/button11"
         android:layout_width="134dp"
         android:layout_height="48dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginBottom="114dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/rounded_buttons"
         android:text="@string/proceed_btn"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -165,8 +167,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/childrenSpinner" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
