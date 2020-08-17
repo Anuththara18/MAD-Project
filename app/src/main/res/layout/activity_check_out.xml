@@ -11,8 +11,8 @@
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/waves"
         android:alpha="0.6"
+        android:src="@drawable/waves"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -49,20 +49,6 @@
         android:textColor="@color/gradient1"
         android:textColorHint="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/textView53"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/checkoutDate2"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/gradient1"
-        android:ems="10"
-        android:inputType="date"
-        android:textColor="@color/gradient1"
-        android:textColorHint="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/textView44"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -142,7 +128,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/checkoutDate2"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/gradient1"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@color/gradient1"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textView44"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/adultsSpinner"
         style="@style/Widget.AppCompat.Spinner.Underlined"
         android:layout_width="200dp"
@@ -156,7 +157,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView45"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
+    <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/roomTypeSpinner"
         style="@style/Widget.AppCompat.Spinner.Underlined"
         android:layout_width="200dp"
@@ -170,7 +171,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView42"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
+    <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/childrenSpinner"
         style="@style/Widget.AppCompat.Spinner.Underlined"
         android:layout_width="200dp"
@@ -231,20 +232,9 @@
         android:layout_width="25dp"
         android:layout_height="28dp"
         android:layout_marginEnd="64dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginBottom="395dp"
         android:background="@android:color/transparent"
         android:drawableStart="@drawable/icon_calendar"
-        app:layout_constraintBottom_toTopOf="@+id/check_out_btn2"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/check_out_btn2"
-        android:layout_width="25dp"
-        android:layout_height="28dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="300dp"
-        android:background="@android:color/transparent"
-        android:drawableStart="@drawable/icon_clock"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

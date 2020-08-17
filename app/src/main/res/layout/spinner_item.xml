@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:textColor="#ffffff"
     android:textSize="17sp"
-    android:padding="10sp">
+    android:backgroundTint="@color/gradient1"
+    >
 
 </CheckedTextView>
