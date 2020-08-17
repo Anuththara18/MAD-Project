@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Hotel Heritage</string>
+    <string name="gym">Gym</string>
+    <string name="swim">Swimming</string>
+    <string name="tennis">Indoor</string>
+    <string name="golf">Golf</string>
+    <string name="yoga">Yoga</string>
+    <string name="Spa">Spa</string>
+    <string name="kidsArea">Kids Area</string>
+    <string name="billiard">Billiard</string>
+    <string name="myAppointments">My List</string>
+    <string name="bookNow">Book Now</string>
 </resources>

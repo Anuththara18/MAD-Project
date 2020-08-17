@@ -87,7 +87,7 @@
         android:layout_width="361dp"
         android:layout_height="49dp"
         android:background="#CADCFB"
-        android:text="Book Now"
+        android:text="@string/bookNow"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
