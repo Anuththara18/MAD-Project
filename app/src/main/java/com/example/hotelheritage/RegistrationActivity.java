@@ -17,7 +17,6 @@ import android.app.DatePickerDialog;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
-import java.util.regex.Pattern;
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -26,7 +25,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     EditText dob;
     EditText email;
     EditText password;
-    EditText confirmPassword;
+    EditText username;
     Button signUp;
     Button signIn;
 
@@ -42,8 +41,8 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
         name = findViewById(R.id.name);
         phone = findViewById(R.id.phone);
         email = findViewById(R.id.email);
+        username = findViewById(R.id.username);
         password = findViewById(R.id.password);
-        confirmPassword = findViewById(R.id.confirmPassword);
         signUp = findViewById(R.id.signUp);
 
         dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);

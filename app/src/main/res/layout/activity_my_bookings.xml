@@ -99,7 +99,7 @@
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintTop_toBottomOf="@+id/price" />
 
     <TextView
         android:id="@+id/textView90"
@@ -116,7 +116,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/price"
         android:layout_width="300dp"
         android:layout_height="28dp"
         android:layout_marginStart="56dp"

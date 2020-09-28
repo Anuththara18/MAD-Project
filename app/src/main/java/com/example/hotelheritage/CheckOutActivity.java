@@ -6,6 +6,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -28,27 +29,19 @@ public class CheckOutActivity extends AppCompatActivity implements AdapterView.O
     EditText checkoutDate;
     Button checkInBtn;
     Button checkOutBtn;
+    String item1, item2, item3, item4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_out);
 
-        Button btn2 = (Button) findViewById(R.id.proceed);
-
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent int5 = new Intent(getApplicationContext(), BookingDetailsActivity.class);
-                startActivity(int5);
-            }
-        });
-
         checkinDate=(EditText)findViewById(R.id.checkinDate);
         checkInBtn=(Button)findViewById(R.id.check_in_btn);
 
         checkoutDate=(EditText)findViewById(R.id.checkoutDate);
         checkOutBtn=(Button)findViewById(R.id.check_out_btn);
+
 
         checkInBtn.setOnClickListener(new View.OnClickListener() {
 
@@ -95,16 +88,18 @@ public class CheckOutActivity extends AppCompatActivity implements AdapterView.O
         });
 
 
-
         // Spinner element
         Spinner roomTypeSpinner = (Spinner) findViewById(R.id.roomTypeSpinner);
         Spinner adultsSpinner = (Spinner) findViewById(R.id.adultsSpinner);
         Spinner childrenSpinner = (Spinner) findViewById(R.id.childrenSpinner);
+        Spinner checkInTimeSpinner = (Spinner) findViewById(R.id.checkInTime);
+
 
         // Spinner click listener
         roomTypeSpinner.setOnItemSelectedListener(this);
         adultsSpinner.setOnItemSelectedListener(this);
         childrenSpinner.setOnItemSelectedListener(this);
+        checkInTimeSpinner.setOnItemSelectedListener(this);
 
         // Spinner Drop down elements
         List<String> roomsCategories = new ArrayList<String>();
@@ -140,32 +135,75 @@ public class CheckOutActivity extends AppCompatActivity implements AdapterView.O
         childrenCategories.add("9");
         childrenCategories.add("10");
 
+        List<String> checkInTimeCategories = new ArrayList<String>();
+        checkInTimeCategories.add("10:00 a.m.");
+        checkInTimeCategories.add("02:00 p.m.");
+
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapterRooms = new ArrayAdapter<String>(this, R.layout.spinner_item, roomsCategories);
         ArrayAdapter<String> dataAdapterAdults = new ArrayAdapter<String>(this, R.layout.spinner_item, adultsCategories);
         ArrayAdapter<String> dataAdapterChildren = new ArrayAdapter<String>(this, R.layout.spinner_item, childrenCategories);
+        ArrayAdapter<String> dataAdapterTime = new ArrayAdapter<String>(this, R.layout.spinner_item, checkInTimeCategories);
 
         // Drop down layout style - list view with radio button
         dataAdapterRooms.setDropDownViewResource(R.layout.spinner_dropdown_item);
         dataAdapterAdults.setDropDownViewResource(R.layout.spinner_dropdown_item);
         dataAdapterChildren.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        dataAdapterTime.setDropDownViewResource(R.layout.spinner_dropdown_item);
 
         // attaching data adapter to spinner
         roomTypeSpinner.setAdapter(dataAdapterRooms);
         adultsSpinner.setAdapter(dataAdapterAdults);
         childrenSpinner.setAdapter(dataAdapterChildren);
+        checkInTimeSpinner.setAdapter(dataAdapterTime);
 
     }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         // On selecting a spinner item
-        String item = parent.getItemAtPosition(position).toString();
+
+        switch(parent.getId()){
+            case R.id.roomTypeSpinner:
+                item1 = parent.getItemAtPosition(position).toString();
+                break;
+            case R.id.adultsSpinner:
+                item2 = parent.getItemAtPosition(position).toString();
+                break;
+            case R.id.childrenSpinner:
+                item3 = parent.getItemAtPosition(position).toString();
+                break;
+            case R.id.checkInTime:
+                item4 = parent.getItemAtPosition(position).toString();
+                break;
+
+        }
 
         // Showing selected spinner item
-        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_SHORT).show();
     }
     public void onNothingSelected(AdapterView<?> arg0) {
+
+    }
+
+    public void sendDetails( View view ) {
+
+        if (TextUtils.isEmpty(checkinDate.getText().toString()))
+            Toast.makeText(getApplicationContext(), "Select Check-In Date", Toast.LENGTH_SHORT).show();
+
+        else if (TextUtils.isEmpty(checkoutDate.getText().toString()))
+            Toast.makeText(getApplicationContext(), "Select Check-Out Date", Toast.LENGTH_SHORT).show();
+
+        else {
+            Intent intent = new Intent(this, BookingDetailsActivity.class);
+            intent.putExtra("n1", item1);
+            intent.putExtra("n2", checkinDate.getText().toString());
+            intent.putExtra("n3", checkoutDate.getText().toString());
+            intent.putExtra("n4", item2);
+            intent.putExtra("n5", item3);
+            intent.putExtra("n6", item4);
+            startActivity(intent);
+        }
 
     }
 

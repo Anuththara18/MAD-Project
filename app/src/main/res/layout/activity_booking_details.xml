@@ -37,21 +37,7 @@
         app:srcCompat="@drawable/mybookings" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginBottom="25dp"
-        android:fontFamily="@font/marko_one"
-        android:text="@string/booking_id"
-        android:textColor="@android:color/background_light"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView19"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/CheckInDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="66dp"
@@ -60,28 +46,28 @@
         android:text="18 - 08 - 2020"
         android:textColor="@android:color/darker_gray"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintBottom_toTopOf="@+id/CheckOutDate"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/CheckOutDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="66dp"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="25dp"
         android:fontFamily="@font/marko_one"
         android:text="20 - 08 - 2020"
         android:textColor="@android:color/darker_gray"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintBottom_toTopOf="@+id/CheckInTime"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView28"
+        android:id="@+id/TotalAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="64dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="44dp"
         android:fontFamily="@font/marko_one"
         android:text="LKR 28,000"
         android:textColor="@android:color/darker_gray"
@@ -90,7 +76,20 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/CheckInTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/marko_one"
+        android:text="10:00 a.m."
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/TotalAmount"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/noOfAdults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="66dp"
@@ -99,24 +98,36 @@
         android:text="2"
         android:textColor="@android:color/darker_gray"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintBottom_toTopOf="@+id/noOfChildren"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/noOfChildren"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="25dp"
         android:fontFamily="@font/marko_one"
-        android:text="@string/room_4_price"
+        android:text="2"
         android:textColor="@android:color/darker_gray"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintBottom_toTopOf="@+id/CheckInDate"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/marko_one"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/noOfAdults"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/roomType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="66dp"
@@ -125,48 +136,8 @@
         android:text="@string/room_4_name"
         android:textColor="@android:color/darker_gray"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintBottom_toTopOf="@+id/price"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="25dp"
-        android:fontFamily="@font/marko_one"
-        android:text="203"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView24"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="25dp"
-        android:fontFamily="@font/marko_one"
-        android:text="B0027"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView25"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginBottom="25dp"
-        android:fontFamily="@font/marko_one"
-        android:text="@string/room_no"
-        android:textColor="@android:color/background_light"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView14"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
@@ -217,7 +188,21 @@
         android:layout_marginStart="66dp"
         android:layout_marginBottom="25dp"
         android:fontFamily="@font/marko_one"
-        android:text="@string/no_of_persons"
+        android:text="@string/adults"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/marko_one"
+        android:text="@string/children"
         android:textColor="@android:color/background_light"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -235,6 +220,20 @@
         android:textColor="@android:color/background_light"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Check-In Time : "
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView27"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -243,7 +242,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="44dp"
         android:fontFamily="@font/marko_one"
         android:text="@string/total_amount"
         android:textColor="@android:color/background_light"

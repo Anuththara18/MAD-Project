@@ -116,11 +116,12 @@
         android:textColor="@color/gradient1"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/username"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
@@ -129,18 +130,18 @@
         android:drawableLeft="@drawable/icon_lock"
         android:drawablePadding="15dp"
         android:ems="10"
-        android:hint="@string/pwd"
-        android:inputType="textPassword"
+        android:hint="Username"
+        android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingBottom="18dp"
         android:textColor="@color/gradient1"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/confirmPassword"
+        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/confirmPassword"
+        android:id="@+id/password"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
@@ -149,7 +150,7 @@
         android:drawableLeft="@drawable/icon_lock"
         android:drawablePadding="15dp"
         android:ems="10"
-        android:hint="@string/c_pwd"
+        android:hint="@string/pwd"
         android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingBottom="18dp"
