@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         signIn = findViewById(R.id.signIn);
-        signUp = findViewById(R.id.signUp);
+        signUp = findViewById(R.id.register);
         forgotPassword = findViewById(R.id.forgotPassword);
 
         signIn.setOnClickListener(new View.OnClickListener() {

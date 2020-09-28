@@ -1,5 +1,8 @@
 package com.example.hotelheritage;
 
+import com.google.firebase.database.IgnoreExtraProperties;
+
+@IgnoreExtraProperties
 public class Users {
 
     private String name;
@@ -10,15 +13,6 @@ public class Users {
     private String password;
 
     public Users() {
-    }
-
-    public Users(String name, Integer conNo, String dob, String email, String username, String password) {
-        this.name = name;
-        this.conNo = conNo;
-        this.dob = dob;
-        this.email = email;
-        this.username = username;
-        this.password = password;
     }
 
     public String getName() {

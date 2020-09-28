@@ -157,11 +157,11 @@
         android:textColor="@color/gradient1"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/signUp"
+        app:layout_constraintBottom_toTopOf="@+id/register"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/signUp"
+        android:id="@+id/register"
         android:layout_width="170dp"
         android:layout_height="45dp"
         android:layout_marginStart="116dp"
