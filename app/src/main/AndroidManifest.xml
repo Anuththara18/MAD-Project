@@ -34,7 +34,19 @@
             android:name=".RoomsSelectionActivity"
             android:label="@string/rooms" />
         <activity
+            android:name=".Room1Activity"
+            android:label="@string/room_details" />
+        <activity
             android:name=".Room2Activity"
+            android:label="@string/room_details" />
+        <activity
+            android:name=".Room3Activity"
+            android:label="@string/room_details" />
+        <activity
+            android:name=".Room4Activity"
+            android:label="@string/room_details" />
+        <activity
+            android:name=".Room5Activity"
             android:label="@string/room_details" />
         <activity
             android:name=".BookingDetailsActivity"

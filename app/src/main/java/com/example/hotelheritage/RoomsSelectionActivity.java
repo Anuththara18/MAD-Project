@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +17,6 @@ public class RoomsSelectionActivity extends AppCompatActivity {
 
     List<RoomsList> roomsList;
     ListView listView;
-    Button detailsBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,35 @@ public class RoomsSelectionActivity extends AppCompatActivity {
 
         RoomListAdapter adapter = new RoomListAdapter(this, R.layout.room_list, roomsList);
 
+
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                if ( position == 0 ) {
+                    Intent int1 = new Intent(getApplicationContext(), Room1Activity.class);
+                    startActivity(int1);
+                }
+                else if ( position == 1 ) {
+                    Intent int1 = new Intent(getApplicationContext(), Room2Activity.class);
+                    startActivity(int1);
+                }
+                else if ( position == 2 ) {
+                    Intent int1 = new Intent(getApplicationContext(), Room3Activity.class);
+                    startActivity(int1);
+                }
+                else if ( position == 3 ) {
+                    Intent int1 = new Intent(getApplicationContext(), Room4Activity.class);
+                    startActivity(int1);
+                }
+                else if ( position == 4 ) {
+                    Intent int1 = new Intent(getApplicationContext(), Room5Activity.class);
+                    startActivity(int1);
+                }
+            }
+        });
 
     }
 }

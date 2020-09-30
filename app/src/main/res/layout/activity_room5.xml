@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#0A0A3C"
     android:textAlignment="viewEnd"
-    tools:context=".Room2Activity">
+    tools:context=".Room5Activity">
 
     <ImageView
         android:id="@+id/imageView90"
@@ -41,7 +41,7 @@
         android:layout_marginTop="7dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/acme"
-        android:text="@string/room_2_description"
+        android:text="@string/room_5_description"
         android:textAlignment="viewStart"
         android:textColor="@color/gradient1"
         android:textSize="15sp"
@@ -84,7 +84,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="33dp"
         android:fontFamily="@font/berkshire_swash"
-        android:text="@string/room_2_name"
+        android:text="@string/room_5_name"
         android:textColor="@color/gradient1"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -98,7 +98,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="36dp"
         android:fontFamily="@font/aclonica"
-        android:text="@string/room_2_price"
+        android:text="@string/room_5_price"
         android:textAlignment="center"
         android:textColor="@color/gradient1"
         android:textSize="14sp"

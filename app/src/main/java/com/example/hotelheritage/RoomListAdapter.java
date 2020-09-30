@@ -1,12 +1,17 @@
 package com.example.hotelheritage;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import java.util.List;
@@ -17,6 +22,7 @@ public class RoomListAdapter extends ArrayAdapter<RoomsList> {
     Context mCtx;
     int resource;
     List<RoomsList> roomList;
+    ListView listView;
 
     public RoomListAdapter (Context mCtx, int resource, List<RoomsList> roomsList) {
         super(mCtx, resource, roomsList);
@@ -43,19 +49,8 @@ public class RoomListAdapter extends ArrayAdapter<RoomsList> {
         imageView.setImageDrawable(mCtx.getResources().getDrawable(roomsList.getImage1()));
         imageView2.setImageDrawable(mCtx.getResources().getDrawable(roomsList.getImage2()));
 
-        view.findViewById(R.id.detailsBtn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
 
-        view.findViewById(R.id.bookNowBtn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         return view;
     }
