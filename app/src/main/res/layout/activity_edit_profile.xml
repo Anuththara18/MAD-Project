@@ -108,7 +108,7 @@
         android:drawablePadding="15dp"
         android:fontFamily="@font/marko_one"
         android:paddingLeft="20dp"
-        android:text="@string/pwd_p"
+        android:text="Username :"
         android:textColor="@color/gradient1"
         android:textSize="17sp"
         android:textStyle="bold"
@@ -116,7 +116,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/epPhone"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -130,11 +130,11 @@
         android:textColor="@android:color/darker_gray"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/dob"
+        app:layout_constraintBottom_toTopOf="@+id/epDob"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/dob"
+        android:id="@+id/epDob"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -148,11 +148,11 @@
         android:textColor="@android:color/darker_gray"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/epEmail"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/epEmail"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -166,11 +166,11 @@
         android:textColor="@android:color/darker_gray"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/epUsername"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/epUsername"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -178,17 +178,17 @@
         android:backgroundTint="@color/gradient1"
         android:ems="10"
         android:fontFamily="@font/marko_one"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         android:text="4531236445874512"
         android:textAlignment="textEnd"
         android:textColor="@android:color/darker_gray"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/editprofile"
+        app:layout_constraintBottom_toTopOf="@+id/saveChanges"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/epName"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -202,11 +202,11 @@
         android:textColor="@android:color/darker_gray"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintBottom_toTopOf="@+id/epPhone"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/editprofile"
+        android:id="@+id/saveChanges"
         android:layout_width="180dp"
         android:layout_height="47dp"
         android:layout_marginStart="116dp"
