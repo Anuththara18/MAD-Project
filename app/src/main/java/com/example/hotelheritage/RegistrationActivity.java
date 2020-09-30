@@ -1,6 +1,5 @@
 package com.example.hotelheritage;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,11 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -49,7 +45,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 dbRef = FirebaseDatabase.getInstance().getReference().child("Users");
 
                 useraccounts.setName(name.getText().toString().trim());
-                //useraccounts.setConNo(Integer.parseInt(phone.getText().toString().trim()));
+                useraccounts.setConNo(phone.getText().toString().trim());
                 useraccounts.setDob(dob.getText().toString().trim());
                 useraccounts.setEmail(email.getText().toString().trim());
                 useraccounts.setUsername(username.getText().toString().trim());
@@ -57,7 +53,8 @@ public class RegistrationActivity extends AppCompatActivity {
 
                 //getting a unique id
                 //we will use it as the Primary Key for our booking
-                String id = dbRef.push().getKey();
+                //String id = dbRef.push().getKey();
+                String id = String.valueOf(maxid+2);
 
                 //Saving the booking
                 dbRef.child(id).setValue(useraccounts);
@@ -67,7 +64,6 @@ public class RegistrationActivity extends AppCompatActivity {
 
             }
         });
-
 
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override

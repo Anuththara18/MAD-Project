@@ -1,13 +1,24 @@
 package com.example.hotelheritage;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class ReservationsHomeActivity extends AppCompatActivity {
+
+    DatabaseReference dbRef;
+    Users useraccounts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +28,7 @@ public class ReservationsHomeActivity extends AppCompatActivity {
         Button btn2 = (Button) findViewById(R.id.rooms);
         Button btn3 = (Button) findViewById(R.id.booknow);
         Button btn4 = (Button) findViewById(R.id.bookings);
-        Button btn5 = (Button) findViewById(R.id.profile);
+        final Button btn5 = (Button) findViewById(R.id.profile);
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +49,7 @@ public class ReservationsHomeActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int3 = new Intent(getApplicationContext(), MyBookingsActivity.class);
+                Intent int3 = new Intent(getApplicationContext(), DisplayBookingsList.class);
                 startActivity(int3);
             }
         });
@@ -46,7 +57,7 @@ public class ReservationsHomeActivity extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int4 = new Intent(getApplicationContext(), MyProfileActivity.class);
+                Intent int4 = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(int4);
             }
         });

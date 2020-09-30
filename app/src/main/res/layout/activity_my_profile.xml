@@ -27,7 +27,7 @@
         android:layout_marginEnd="118dp"
         android:layout_marginBottom="51dp"
         android:src="@drawable/profile"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintBottom_toTopOf="@+id/pName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -109,7 +109,7 @@
         android:drawablePadding="15dp"
         android:fontFamily="@font/marko_one"
         android:paddingLeft="20dp"
-        android:text="@string/pwd_p"
+        android:text="Username :"
         android:textColor="@android:color/background_light"
         android:textSize="17sp"
         android:textStyle="bold"
@@ -117,7 +117,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/pName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
@@ -128,11 +128,11 @@
         android:textColor="@android:color/darker_gray"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintBottom_toTopOf="@+id/pPhone"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/pPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
@@ -143,11 +143,11 @@
         android:textColor="@android:color/darker_gray"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintBottom_toTopOf="@+id/pDob"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/pDob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
@@ -158,11 +158,11 @@
         android:textColor="@android:color/darker_gray"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintBottom_toTopOf="@+id/pEmail"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/pEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
@@ -173,11 +173,11 @@
         android:textColor="@android:color/darker_gray"
         android:textColorHint="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintBottom_toTopOf="@+id/pUsername"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/pUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"

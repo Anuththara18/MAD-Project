@@ -26,19 +26,19 @@
         android:layout_height="56dp"
         android:layout_marginStart="70dp"
         android:layout_marginEnd="66dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="180dp"
         android:fontFamily="@font/kaushan_script"
         android:text="@string/hotel_name"
         android:textColor="@android:color/white"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintBottom_toTopOf="@+id/lpassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/lusername"
         android:layout_width="wrap_content"
         android:layout_height="43dp"
         android:background="@drawable/text_inputs"
@@ -46,7 +46,7 @@
         android:drawablePadding="15dp"
         android:ems="10"
         android:hint="@string/username"
-        android:inputType="textEmailAddress"
+        android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:textColorLink="@color/colorPrimaryDark"
         android:textSize="17sp"
@@ -58,7 +58,7 @@
         app:layout_constraintVertical_bias="0.38" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/lpassword"
         android:layout_width="wrap_content"
         android:layout_height="43dp"
         android:autofillHints=""
@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.516" />
 
     <Button
-        android:id="@+id/signIn"
+        android:id="@+id/lsignIn"
         android:layout_width="184dp"
         android:layout_height="47dp"
         android:background="@drawable/rounded_buttons"

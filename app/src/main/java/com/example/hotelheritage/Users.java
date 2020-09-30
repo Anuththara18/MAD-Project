@@ -6,7 +6,7 @@ import com.google.firebase.database.IgnoreExtraProperties;
 public class Users {
 
     private String name;
-    private Integer conNo;
+    private String conNo;
     private String dob;
     private String email;
     private String username;
@@ -23,11 +23,11 @@ public class Users {
         this.name = name;
     }
 
-    public Integer getConNo() {
+    public String getConNo() {
         return conNo;
     }
 
-    public void setConNo(Integer conNo) {
+    public void setConNo(String conNo) {
         this.conNo = conNo;
     }
 
