@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
                 uname = username.getText().toString();
                 pwd = password.getText().toString();
 
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Users/2");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Users/3");
                 dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

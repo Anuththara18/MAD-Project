@@ -27,8 +27,8 @@ public class BookingDetailsActivity extends AppCompatActivity {
     Float n1, n2;
     Button btn2;
     long maxid = 0;
-    Float daysBetween;
-    Float days = 1f;
+    Float roomCharge;
+    Float noOfDays;
 
     //a list to store all the bookings in firebase database
     List<RoomsReservation> bookings;
@@ -82,37 +82,41 @@ public class BookingDetailsActivity extends AppCompatActivity {
             date1 = dates.parse(inDate);
             date2 = dates.parse(outDate);
 
-            long difference = date2.getTime() - date1.getTime();
-            float daysBetween = (difference / ( 1000 * 60 * 60 * 24 ));
+            noOfDays = calcDateDifference(date1, date2);
 
             if(roomType.getText().toString().equals("Deluxe Ocean View")) {
                 price.setText("LKR 11,000 / Night");
-                TotalAmount.setText("LKR " + (((n1*11000) + (n2*5500)) * daysBetween) );
+                roomCharge = 11000f;
+                TotalAmount.setText("LKR " +  calcTotalAmount(roomCharge, n1, n2, noOfDays) );
             }
 
             else if(roomType.getText().toString().equals("Family Suite with Sea View")) {
                 price.setText("LKR 12,000 / Night");
-                TotalAmount.setText("LKR " + (((n1*12000) + (n2*6000)) * daysBetween) );
+                roomCharge = 12000f;
+                TotalAmount.setText("LKR " + calcTotalAmount(roomCharge, n1, n2, noOfDays) );
             }
 
             else if(roomType.getText().toString().equals("Junior Suite Superior")) {
                 price.setText("LKR 13,000 / Night");
-                TotalAmount.setText("LKR " + (((n1*13000) + (n2*6500)) * daysBetween) );
+                roomCharge = 13000f;
+                TotalAmount.setText("LKR " + calcTotalAmount(roomCharge, n1, n2, noOfDays) );
             }
 
             else if(roomType.getText().toString().equals("Executive Suite")) {
                 price.setText("LKR 14,000 / Night");
-                TotalAmount.setText("LKR " + (((n1*14000) + (n2*7000)) * daysBetween) );
+                roomCharge = 14000f;
+                TotalAmount.setText("LKR " + calcTotalAmount(roomCharge, n1, n2, noOfDays) );
             }
 
             else if(roomType.getText().toString().equals("Heritage Suite")) {
                 price.setText("LKR 15,000 / Night");
-                TotalAmount.setText("LKR " + (((n1*15000) + (n2*7500)) * daysBetween) );
+                roomCharge = 15000f;
+                TotalAmount.setText("LKR " + calcTotalAmount(roomCharge, n1, n2, noOfDays) );
             }
 
         }
         catch (Exception exception) {
-            Toast.makeText(this, "Unable to find difference", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Unable to get Total Amount", Toast.LENGTH_SHORT).show();
         }
 
 
@@ -163,7 +167,20 @@ public class BookingDetailsActivity extends AppCompatActivity {
 
         //displaying a success toast
         Toast.makeText(getApplicationContext(), "Booking Successful", Toast.LENGTH_SHORT).show();
+        Intent int5 = new Intent(getApplicationContext(), MyBookingsActivity.class);
+        startActivity(int5);
 
     }
+
+    public float calcDateDifference(Date checkInDate, Date checkOutDate) {
+        long difference = checkOutDate.getTime() - checkInDate.getTime();
+        float daysBetween = (difference / ( 1000 * 60 * 60 * 24 ));
+        return daysBetween;
+    }
+
+    public float calcTotalAmount(Float roomCharge, Float adults, Float children, Float noOfDays) {
+        return ( ( (adults*roomCharge) + (children*roomCharge/2) ) * noOfDays );
+    }
+
 
 }

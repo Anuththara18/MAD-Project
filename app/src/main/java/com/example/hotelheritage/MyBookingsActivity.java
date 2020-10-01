@@ -53,7 +53,7 @@ public class MyBookingsActivity extends AppCompatActivity {
             }
         });
 
-        dbRef = FirebaseDatabase.getInstance().getReference().child("Bookings/3");
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Bookings/1");
         dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -93,7 +93,7 @@ public class MyBookingsActivity extends AppCompatActivity {
         dialog.setNegativeButton("Yes",new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Bookings").child("3");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Bookings").child("1");
                 dbRef.removeValue();
                 Toast.makeText(getApplicationContext(), "Booking Cancelled Successfully", Toast.LENGTH_SHORT).show();
             }

@@ -78,14 +78,14 @@ public class UpdateBookingDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dbRef = FirebaseDatabase.getInstance().getReference();
-                dbRef.child("Bookings/3/roomType").setValue(roomType.getText().toString().trim());
-                dbRef.child("Bookings/3/price").setValue(price.getText().toString().trim());
-                dbRef.child("Bookings/3/noOfAdults").setValue(noOfAdults.getText().toString().trim());
-                dbRef.child("Bookings/3/noOfChildren").setValue(noOfChildren.getText().toString().trim());
-                dbRef.child("Bookings/3/checkInDate").setValue(CheckInDate.getText().toString().trim());
-                dbRef.child("Bookings/3/checkOutDate").setValue(CheckOutDate.getText().toString().trim());
-                dbRef.child("Bookings/3/checkInTime").setValue(CheckInTime.getText().toString().trim());
-                dbRef.child("Bookings/3/totalAmount").setValue(TotalAmount.getText().toString().trim());
+                dbRef.child("Bookings/1/roomType").setValue(roomType.getText().toString().trim());
+                dbRef.child("Bookings/1/price").setValue(price.getText().toString().trim());
+                dbRef.child("Bookings/1/noOfAdults").setValue(noOfAdults.getText().toString().trim());
+                dbRef.child("Bookings/1/noOfChildren").setValue(noOfChildren.getText().toString().trim());
+                dbRef.child("Bookings/1/checkInDate").setValue(CheckInDate.getText().toString().trim());
+                dbRef.child("Bookings/1/checkOutDate").setValue(CheckOutDate.getText().toString().trim());
+                dbRef.child("Bookings/1/checkInTime").setValue(CheckInTime.getText().toString().trim());
+                dbRef.child("Bookings/1/totalAmount").setValue(TotalAmount.getText().toString().trim());
                 Toast.makeText(getApplicationContext(), "Updated Successfully", Toast.LENGTH_SHORT).show();
                 Intent int5 = new Intent(getApplicationContext(), MyBookingsActivity.class);
                 startActivity(int5);

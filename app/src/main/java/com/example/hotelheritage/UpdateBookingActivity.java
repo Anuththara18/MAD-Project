@@ -49,7 +49,7 @@ public class UpdateBookingActivity extends AppCompatActivity implements AdapterV
         checkoutDate=(EditText)findViewById(R.id.checkoutDate);
         checkOutBtn=(Button)findViewById(R.id.check_out_btn);
 
-        dbRef = FirebaseDatabase.getInstance().getReference().child("Bookings/3");
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Bookings/1");
         dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

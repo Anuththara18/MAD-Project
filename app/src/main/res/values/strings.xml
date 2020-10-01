@@ -1,4 +1,7 @@
 <resources>
+
+    <!-- *********************************** IT19114040 ******************************************** -->
+
     <string name="app_name">Hotel Heritage</string>
 
     <!-- SIGN IN -->
@@ -100,5 +103,8 @@
     <string name="children">No of Children :</string>
     <string name="proceed_btn">Proceed</string>
     <string name="spinner_title">spinner</string>
+
+    <!-- ******************************************************************************************** -->
+
 
 </resources>

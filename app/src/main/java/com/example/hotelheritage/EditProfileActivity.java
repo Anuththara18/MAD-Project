@@ -42,7 +42,7 @@ public class EditProfileActivity extends AppCompatActivity {
         saveChanges = (Button)findViewById(R.id.saveChanges);
         deleteprofile = (Button)findViewById(R.id.deleteprofile);
 
-        dbRef = FirebaseDatabase.getInstance().getReference().child("Users/2");
+        dbRef = FirebaseDatabase.getInstance().getReference().child("Users/3");
         dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -69,11 +69,11 @@ public class EditProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dbRef = FirebaseDatabase.getInstance().getReference();
-                dbRef.child("Users").child("2").child("name").setValue(epName.getText().toString().trim());
-                dbRef.child("Users/2/conNo").setValue(epPhone.getText().toString().trim());
-                dbRef.child("Users/2/dob").setValue(epDob.getText().toString().trim());
-                dbRef.child("Users/2/email").setValue(epEmail.getText().toString().trim());
-                dbRef.child("Users/2/username").setValue(epUsername.getText().toString().trim());
+                dbRef.child("Users").child("3").child("name").setValue(epName.getText().toString().trim());
+                dbRef.child("Users/3/conNo").setValue(epPhone.getText().toString().trim());
+                dbRef.child("Users/3/dob").setValue(epDob.getText().toString().trim());
+                dbRef.child("Users/3/email").setValue(epEmail.getText().toString().trim());
+                dbRef.child("Users/3/username").setValue(epUsername.getText().toString().trim());
                 Toast.makeText(getApplicationContext(), "Updated Successfully", Toast.LENGTH_SHORT).show();
                 //Intent int1 = new Intent(getApplicationContext(), MyProfileActivity.class);
                 //startActivity(int1);
@@ -103,7 +103,7 @@ public class EditProfileActivity extends AppCompatActivity {
         dialog.setNegativeButton("Yes",new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Users").child("2");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Users").child("3");
                 dbRef.removeValue();
                 Toast.makeText(getApplicationContext(), "Profile Deleted Successfully", Toast.LENGTH_SHORT).show();
                 Intent int2 = new Intent(getApplicationContext(), ReservationsHomeActivity.class);
