@@ -37,6 +37,15 @@ public class MyBookingsActivity extends AppCompatActivity {
         rescheduleBtn = (Button) findViewById(R.id.rescheduleBtn);
         cancelBtn = (Button)findViewById(R.id.cancelBtn);
 
+        rescheduleBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int2 = new Intent(getApplicationContext(), UpdateBookingActivity.class);
+                startActivity(int2);
+            }
+        });
+
+
         cancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +93,7 @@ public class MyBookingsActivity extends AppCompatActivity {
         dialog.setNegativeButton("Yes",new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Bookings").child("2");
+                dbRef = FirebaseDatabase.getInstance().getReference().child("Bookings").child("3");
                 dbRef.removeValue();
                 Toast.makeText(getApplicationContext(), "Booking Cancelled Successfully", Toast.LENGTH_SHORT).show();
             }

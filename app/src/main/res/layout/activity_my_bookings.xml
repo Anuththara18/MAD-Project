@@ -114,7 +114,7 @@
 
     <TextView
         android:id="@+id/totPrice"
-        android:layout_width="210dp"
+        android:layout_width="300dp"
         android:layout_height="27dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="7dp"

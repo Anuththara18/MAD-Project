@@ -52,6 +52,12 @@
             android:name=".BookingDetailsActivity"
             android:label="@string/booking_details" />
         <activity
+            android:name=".UpdateBookingActivity"
+            android:label="Reschedule Booking" />
+        <activity
+            android:name=".UpdateBookingDetailsActivity"
+            android:label="Reschedule Booking" />
+        <activity
             android:name=".RegistrationActivity"
             android:label="@string/sign_up_btn" />
         <activity
