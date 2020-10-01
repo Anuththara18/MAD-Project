@@ -1,9 +1,11 @@
 package com.example.hotelheritage;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
@@ -81,14 +83,35 @@ public class EditProfileActivity extends AppCompatActivity {
         deleteprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                alertDialog();
+            }
+        });
+
+    }
+
+    private void alertDialog() {
+        AlertDialog.Builder dialog=new AlertDialog.Builder(this);
+        dialog.setMessage("Are You sure you want to delete your profile?");
+        dialog.setTitle("Delete Profile");
+        dialog.setPositiveButton("No",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                                        int which) {
+                        Toast.makeText(getApplicationContext(),"Profile Not Deleted",Toast.LENGTH_LONG).show();
+                    }
+                });
+        dialog.setNegativeButton("Yes",new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
                 dbRef = FirebaseDatabase.getInstance().getReference().child("Users").child("2");
                 dbRef.removeValue();
-                Toast.makeText(getApplicationContext(), " Deleted Successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Profile Deleted Successfully", Toast.LENGTH_SHORT).show();
                 Intent int2 = new Intent(getApplicationContext(), ReservationsHomeActivity.class);
                 startActivity(int2);
             }
         });
-
+        AlertDialog alertDialog=dialog.create();
+        alertDialog.show();
     }
 
 }

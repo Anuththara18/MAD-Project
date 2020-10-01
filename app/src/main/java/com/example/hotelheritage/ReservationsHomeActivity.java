@@ -49,7 +49,7 @@ public class ReservationsHomeActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int3 = new Intent(getApplicationContext(), DisplayBookingsList.class);
+                Intent int3 = new Intent(getApplicationContext(), MyBookingsActivity.class);
                 startActivity(int3);
             }
         });
