@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "366269043141",
+    "firebase_url": "https://hotelheritage-910d4.firebaseio.com",
+    "project_id": "hotelheritage-910d4",
+    "storage_bucket": "hotelheritage-910d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366269043141:android:35ae4ac2849253651abbac",
+        "android_client_info": {
+          "package_name": "com.example.hotelheritage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366269043141-6upmcp6gq082tukjmkouj9vrcmjps0vo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hotelheritage",
+            "certificate_hash": "2b93f38f6d608c30fcbc242e35c78e7a3aa4a6ef"
+          }
+        },
+        {
+          "client_id": "366269043141-6vrjujlq48e0fosvigj0dlk5o8maser0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpv-hNpzXaa4cd7dVbb1MCHS7SCggW_IU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366269043141-6vrjujlq48e0fosvigj0dlk5o8maser0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
