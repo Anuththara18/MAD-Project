@@ -3,9 +3,9 @@ package com.example.hotelheritage;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-public class ExampleUnitTest {
+public class IT19114040 {
 
     private BookingDetailsActivity bookingDetailsActivity;
 

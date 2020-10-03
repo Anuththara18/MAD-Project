@@ -95,7 +95,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                     //getting a unique id
                     //we will use it as the Primary Key for our booking
                     //String id = dbRef.push().getKey();
-                    String id = String.valueOf(maxid+3);
+                    String id = String.valueOf(maxid+1);
 
                     //Saving the booking
                     dbRef.child(id).setValue(useraccounts);
