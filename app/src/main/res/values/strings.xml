@@ -1,3 +1,110 @@
 <resources>
+
+    <!-- *********************************** IT19114040 ******************************************** -->
+
     <string name="app_name">Hotel Heritage</string>
+
+    <!-- SIGN IN -->
+    <string name="hotel_name">Hotel Heritage</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in_btn">Sign In</string>
+    <string name="forgot_pwd_btn">Forgot Password?</string>
+    <string name="sign_up_btn">Sign Up</string>
+    <string name="forgot_pwd">Forgot Password</string>
+
+    <!-- SIGN UP -->
+    <string name="name">Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="dob">DOB</string>
+    <string name="email">Email</string>
+    <string name="pwd">Password</string>
+    <string name="c_pwd">Confirm Password</string>
+    <string name="select_hint">Select</string>
+    <string name="reset_pwd">Reset Password</string>
+
+    <!-- RESERVATIONS HOME -->
+    <string name="reservations">Reservations</string>
+    <string name="welcome">Welcome to</string>
+    <string name="profile_btn">My Profile</string>
+    <string name="bookings_btn">My Bookings</string>
+    <string name="rooms_btn">Rooms</string>
+    <string name="book_now_btn">Book Now</string>
+
+    <!-- ROOM DETAILS -->
+    <string name="room_details">Room Details</string>
+    <string name="overview">Overview</string>
+    <string name="room_1_name">Deluxe Ocean View</string>
+    <string name="room_2_name">Family Suite with Sea View</string>
+    <string name="room_3_name">Junior Suite Superior</string>
+    <string name="room_4_name">Executive Suite</string>
+    <string name="room_5_name">Heritage Suite</string>
+    <string name="room_1_price">LKR 11,000 / Night </string>
+    <string name="room_2_price">LKR 12,000 / Night </string>
+    <string name="room_3_price">LKR 13,000 / Night </string>
+    <string name="room_4_price">LKR 14,000 / Night </string>
+    <string name="room_5_price">LKR 15,000 / Night </string>
+    <string name="room_1_description">You can experience an unforgettable stay in the Deluxe Ocean View Rooms with sea views which are fully-equipped with the best amenities. These 88-m2 rooms have a queen-size bed (180x200), a sofa in the living room. Each room offers 210 sqm / 2,260 sqf of luxury.</string>
+    <string name="room_2_description">The Family Suites are the perfect accommodations for enjoying a family vacation. These 77-m2 rooms have two bedrooms, one with a king-size bed (180x200 cm) and the other with two double beds (135x200 cm) and a sofa bed in the lounge area</string>
+    <string name="room_3_description">The Hotel Heritage Lanka provides its Superior Junior Suites, 40-m2 rooms fully equipped to offer you the best amenities. These suites have two double beds (135x200 cm) and a sofa bed in the lounge area. Each room offers 210 sqm / 2,260 sqf of luxury.</string>
+    <string name="room_4_description">Our Executive Suites are beautifully appointed and include a spacious guest room and separate living room with impressive views of the city and Indian Ocean.Each room offers 84 sqm / 904 sqf of luxury. Each room offers 210 sqm / 2,260 sqf of luxury.</string>
+    <string name="room_5_description">The Heritage Suite is an exclusive suite – a luxurious living space with superlative views over the Indian Ocean. The suite comprises one spacious guest room and a separate living room featuring plush interior and luxurious amenities. Each room offers 210 sqm / 2,260 sqf of luxury.</string>
+    <string name="amenities">Amenities</string>
+    <string name="amenities_1">Satellite TV</string>
+    <string name="amenities_2">Air Conditioning</string>
+    <string name="amenities_3">Electric Kettle</string>
+    <string name="amenities_4">Electronic Safe</string>
+    <string name="amenities_5">WiFi</string>
+    <string name="amenities_6">Minibar</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!-- MY PROFILE & EDIT PROFILE -->
+    <string name="my_profile">My Profile</string>
+    <string name="name_p">Name :</string>
+    <string name="phone_p">Phone :</string>
+    <string name="email_p">Email :</string>
+    <string name="dob_p">DOB :</string>
+    <string name="pwd_p">Password :</string>
+    <string name="edit_profile_btn">Edit Profile</string>
+    <string name="save_changes_btn">Save Changes</string>
+
+    <!-- BOOKING DETAILS -->
+    <string name="booking_details">Booking Details</string>
+    <string name="booking_id">Booking ID :</string>
+    <string name="room_no">Room Number :</string>
+    <string name="room_type">Room Type :</string>
+    <string name="price">Price :</string>
+    <string name="no_of_persons">No of Persons :</string>
+    <string name="check_in">Check-In Date :</string>
+    <string name="check_out">Check-Out Date :</string>
+    <string name="total_amount">Total Amount :</string>
+    <string name="confirm_booking_btn">Confirm Booking</string>
+
+    <!-- MY BOOKINGS -->
+    <string name="my_bookings">My Bookings</string>
+    <string name="cancle_btn">Cancel</string>
+    <string name="reschedule_btn">Reschedule</string>
+    <string name="book_another_btn">Book Another Room</string>
+
+    <!-- ROOMS SELECTION -->
+    <string name="rooms">Rooms</string>
+    <string name="details_btn">Details</string>
+
+    <!-- RESERVATIONS HOME -->
+    <string name="adults">No of Adults :</string>
+    <string name="children">No of Children :</string>
+    <string name="proceed_btn">Proceed</string>
+    <string name="spinner_title">spinner</string>
+
+    <!-- ******************************************************************************************** -->
+
+
 </resources>

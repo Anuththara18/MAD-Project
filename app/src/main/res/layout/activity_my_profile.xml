@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A3C"
+    tools:context=".MyProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/waves"
+        android:alpha="0.6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <ImageView
+        android:layout_width="172dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="51dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/pName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="37dp"
+        android:drawableLeft="@drawable/icon_person"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/marko_one"
+        android:paddingLeft="20dp"
+        android:text="@string/name_p"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="37dp"
+        android:drawableLeft="@drawable/icon_call"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/marko_one"
+        android:paddingLeft="20dp"
+        android:text="@string/phone_p"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="37dp"
+        android:drawableLeft="@drawable/icon_calendar"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/marko_one"
+        android:paddingLeft="20dp"
+        android:text="@string/dob_p"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="37dp"
+        android:drawableLeft="@drawable/icon_email"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/marko_one"
+        android:paddingLeft="20dp"
+        android:text="@string/email_p"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="164dp"
+        android:drawableLeft="@drawable/icon_lock"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/marko_one"
+        android:paddingLeft="20dp"
+        android:text="Username :"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="39dp"
+        android:backgroundTint="@color/gradient1"
+        android:fontFamily="@font/marko_one"
+        android:text="Jayakody"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="#ffffff"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/pPhone"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="38dp"
+        android:backgroundTint="@color/gradient1"
+        android:fontFamily="@font/marko_one"
+        android:text="+94 774 542 478"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="#ffffff"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/pDob"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pDob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="38dp"
+        android:backgroundTint="@color/gradient1"
+        android:fontFamily="@font/marko_one"
+        android:text="27 - 05 - 1998"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="#ffffff"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/pEmail"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="42dp"
+        android:backgroundTint="@color/gradient1"
+        android:fontFamily="@font/marko_one"
+        android:text="jay@gmail.com"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="#ffffff"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/pUsername"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="@color/gradient1"
+        android:fontFamily="@font/marko_one"
+        android:text="*************"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="#ffffff"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/editprofile"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="@string/edit_profile_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

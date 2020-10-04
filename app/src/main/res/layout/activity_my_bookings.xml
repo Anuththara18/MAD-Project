@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A3C"
+    tools:context=".MyBookingsActivity">
+
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="103dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="@string/cancle_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/rescheduleBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totPrice" />
+
+    <Button
+        android:id="@+id/rescheduleBtn"
+        android:layout_width="128dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="76dp"
+        android:background="@drawable/rounded_buttons"
+        android:text="@string/reschedule_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totPrice" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/waves"
+        android:alpha="0.6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <TextView
+        android:id="@+id/rName"
+        android:layout_width="333dp"
+        android:layout_height="285dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/borders"
+        android:fontFamily="@font/marko_one"
+        android:text="@string/room_1_name"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inDate"
+        android:layout_width="300dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Check In Date : 18 - 08 - 2020"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outDate" />
+
+    <TextView
+        android:id="@+id/inTime"
+        android:layout_width="300dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Check In Time : 1200h"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inDate" />
+
+    <TextView
+        android:id="@+id/outDate"
+        android:layout_width="300dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Check Out Date : 22 - 08 - 2020"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totPrice"
+        android:layout_width="300dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Amount : LKR 11,000"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

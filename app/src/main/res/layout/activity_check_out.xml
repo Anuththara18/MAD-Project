@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A3C"
+    tools:context=".CheckOutActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:src="@drawable/waves"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="58dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Make a Reservation..."
+        android:textColor="@color/gradient1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/checkoutDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/gradient1"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@color/gradient1"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textView53"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/checkinDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/gradient1"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@color/gradient1"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textView43"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/marko_one"
+        android:text="@string/check_out"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkoutDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/marko_one"
+        android:text="Check-In Time :"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkInTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/marko_one"
+        android:text="@string/adults"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/adultsSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/marko_one"
+        android:text="@string/children"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/childrenSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/checkInTime"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/gradient1"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@color/gradient1"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textView44"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/adultsSpinner"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/gradient1"
+        android:prompt="@string/spinner_title"
+        android:textColor="@android:color/white"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textView45"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/roomTypeSpinner"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/gradient1"
+        android:prompt="@string/spinner_title"
+        android:textColor="@android:color/white"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textView42"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/childrenSpinner"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/gradient1"
+        android:textColor="@android:color/white"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/proceed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/marko_one"
+        android:text="@string/check_in"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkinDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/marko_one"
+        android:text="@string/room_type"
+        android:textColor="@color/gradient1"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/roomTypeSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/check_in_btn"
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="64dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/icon_calendar"
+        app:layout_constraintBottom_toTopOf="@+id/check_out_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/check_out_btn"
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="395dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/icon_calendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="151dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/rounded_buttons"
+        android:onClick="sendDetails"
+        android:text="@string/proceed_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

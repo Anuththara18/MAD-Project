@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abhaya_libre_semibold</item>
+        <item>@font/aclonica</item>
+        <item>@font/acme</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/boogaloo</item>
+        <item>@font/cagliostro</item>
+        <item>@font/coiny</item>
+        <item>@font/kaushan_script</item>
+        <item>@font/marko_one</item>
+        <item>@font/pacifico</item>
+    </array>
+</resources>

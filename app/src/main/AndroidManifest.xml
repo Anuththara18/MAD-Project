@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hotelheritage">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +11,72 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="@string/edit_profile_btn" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="Forgot Password" />
+        <activity
+            android:name=".CheckOutActivity"
+            android:label="Booking" />
+        <activity
+            android:name=".MyBookingsActivity"
+            android:label="@string/my_bookings" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:label="@string/my_profile" />
+        <activity
+            android:name=".ReservationsHomeActivity"
+            android:label="@string/reservations" />
+        <activity
+            android:name=".RoomsSelectionActivity"
+            android:label="@string/rooms" />
+        <activity
+            android:name=".Room1Activity"
+            android:label="@string/room_details" />
+        <activity
+            android:name=".Room2Activity"
+            android:label="@string/room_details" />
+        <activity
+            android:name=".Room3Activity"
+            android:label="@string/room_details" />
+        <activity
+            android:name=".Room4Activity"
+            android:label="@string/room_details" />
+        <activity
+            android:name=".Room5Activity"
+            android:label="@string/room_details" />
+        <activity
+            android:name=".BookingDetailsActivity"
+            android:label="@string/booking_details" />
+        <activity
+            android:name=".UpdateBookingActivity"
+            android:label="Reschedule Booking" />
+        <activity
+            android:name=".UpdateBookingDetailsActivity"
+            android:label="Reschedule Booking" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/sign_up_btn" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/sign_in_btn" />
+
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>
