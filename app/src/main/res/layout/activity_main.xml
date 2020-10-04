@@ -94,10 +94,12 @@
                     android:padding="16dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <Button
+                        android:id="@+id/restuarantsBtn"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/restuarants" />
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/restuarants" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -130,10 +132,12 @@
                     android:padding="16dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <Button
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/activities" />
+                        android:id="@+id/activitiesBtn"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/activities" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -166,10 +170,12 @@
                     android:padding="16dp"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <Button
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/payment" />
+                        android:drawableStart="@drawable/payment"
+                        android:id="@+id/paymentsBtn"
+                        android:background="@android:color/transparent" />
 
                     <TextView
                         android:layout_width="wrap_content"

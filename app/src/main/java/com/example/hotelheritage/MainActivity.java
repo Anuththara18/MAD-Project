@@ -16,15 +16,43 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn1 = (Button) findViewById(R.id.btn);
+        Button reservationsBtn = (Button) findViewById(R.id.btn);
+        Button restuarantsBtn = (Button) findViewById(R.id.restuarantsBtn);
+        Button activitiesBtn = (Button) findViewById(R.id.activitiesBtn);
+        Button paymentsBtn = (Button) findViewById(R.id.paymentsBtn);
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+
+        reservationsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent int5 = new Intent(getApplicationContext(), ReservationsHomeActivity.class);
                 startActivity(int5);
             }
         });
+
+        //restuarantsBtn.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+        //    public void onClick(View v) {
+        //        Intent int5 = new Intent(getApplicationContext(), Restuarant.class);
+        //        startActivity(int5);
+        //    }
+        //});
+
+        //activitiesBtn.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+        //    public void onClick(View v) {
+        //        Intent int5 = new Intent(getApplicationContext(), ActivitiesHome.class);
+        //        startActivity(int5);
+        //    }
+        //});
+
+        //paymentsBtn.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+        //    public void onClick(View v) {
+        //        Intent int5 = new Intent(getApplicationContext(), payment.class);
+        //        startActivity(int5);
+        //    }
+        //});
 
         Button btn2 = (Button) findViewById(R.id.btnsignin);
 
